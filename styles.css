@@ -1,0 +1,991 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas neue';
+    
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(3, 3, 3, 0.719);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #eb8130ee;
+    border-radius: 15px;
+}
+
+.loader-ctn {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #121212;
+    overflow:hidden;
+}
+
+.loader {
+    position: relative;
+	font-size: 90px;
+	color: #121212;
+	text-transform: uppercase;
+	-webkit-text-stroke:1.5px #eb8130;
+    
+}
+
+.loader::before
+{
+	content: 'WELCOM';
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 0%;
+	color: #EC904A;
+	-webkit-text-stroke:0px #EC904A;
+	border-right: 2px solid #EC904A;
+	overflow: hidden;
+	animation: load 3.2s linear infinite alternate;
+}
+@keyframes load 
+{
+	100%
+	{
+		width: 100%;
+	}
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    overflow: hidden;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.menu span {
+    background: #EB8030;
+    width: 30px;
+    height: 3px;
+    margin: 2px 0px;
+    overflow: hidden;
+}
+
+
+.navbar .menu {
+    position: absolute;
+    right: 20px;
+    width: 50px;
+    overflow: hidden;
+}
+
+nav .link a {
+    color: #EB8030;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 3px;
+    font-size: 1.4em;
+}
+
+nav .link a:hover {
+    color: white;
+}
+
+.link {
+    width: 100%;
+    height: 140px;
+    position: absolute;
+    flex-direction: column;
+    background: #0f0f0fe0;
+    top: -140px;
+    left: 0;
+    /* padding: 10px 0px; */
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.menu {
+    display: flex;
+    width: 10px;
+}
+
+.open {
+    top: 70px;
+    overflow: hidden;
+}
+
+
+.titre-portfolio {
+    color: #EB8030;
+    letter-spacing: 2.5px
+
+}
+
+
+.box1{
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    
+    
+    
+}
+
+.box-texte1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1 1;
+    margin-left: 3%;
+    margin-right: 4%;
+    margin-block-end: 5%;
+    
+}
+
+.prenom {
+    font-family: 'Brittany Signature';
+    font-size: 7em;
+    line-height: 1.6em;
+    cursor: pointer;
+}
+
+.nom { 
+    font-family: 'Brittany Signature';
+    margin-left: 30px;
+    color: #EB8030;
+    cursor: pointer;
+    
+}
+
+.pitch {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    
+    
+}
+
+.dev {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.dev:hover {
+    color: #EB8030;
+    font-size: 2.7em;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
+
+.box-img2 {
+    display: none;
+
+}
+
+.box-img1 {
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    width: 50%;
+    height: 100vh;
+
+}
+
+.img1 {
+    background-image: url('./img/MoiNoirEtBlanc\(500\ ×\ 400\ px\).png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 590px;
+}
+
+
+.ligne-txt {
+    display: flex;
+    height: 740px;
+    margin-right: 50px;
+    text-orientation: upright;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfo {
+    color: #EB8030;
+}
+
+/* wave  */
+
+.wave-bcg1 {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.wave-bcg1 .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("./img/wave\ -\ Modifié.png");
+    background-size: 1000px 100px;
+}
+
+.wave-bcg1 .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.wave-bcg1 .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: 0;
+    
+}
+
+.wave-bcg1 .wave.wave3 {
+    animation: animate2 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15;
+    
+}
+.wave-bcg1 .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+@media screen and (max-width : 1050px)   { 
+
+    .box1 {
+        display: flex;
+        flex-wrap: wrap;
+        /* height: 170vh; */
+        margin-right: 0px;
+       
+        
+    }
+
+
+    .box-texte1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1 1 100%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .prenom {
+        font-size: 5em;
+    }
+
+
+
+    .box-img1 {
+        /* flex: none; */
+        
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .img1 {
+        background-size: 100%;
+        display: flex;
+    }
+    
+    .ligne-txt {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width : 1049px)   {
+    .box1 {
+        /* height: 135vh; */
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .box-texte1 {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .box-img1 {
+        display: none;
+    }
+
+    .box-img2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .img2 {
+        margin-bottom: 20px;
+    }
+
+    nav .link a {
+        color: #EB8030;
+        text-decoration: none;
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    
+    .link {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        flex-direction: column;
+        background: #0f0f0fe0;
+        top: -1000px;
+        
+        left: 0;
+        /* padding: 10px 0px; */
+        z-index: 1;
+        overflow: hidden;
+        transition: 1s;
+    }
+
+
+    .open {
+       top: 70px;
+    }
+
+}
+
+
+
+/* Page2 */
+
+.box2 {
+    width: 100%;
+    height: 700px;
+    background-image: url("./img/Copie\ de\ Présentation\ Simple\ et\ Basique\ Noir\ Élégant\ et\ Professionnel\ Dégradé\ \(Site\ Web\)\ \(1\).png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+#titre2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 35px; */
+}
+
+#titre2 h2 {
+    color: white;
+    font-size: 3.5em;
+    text-align: center;
+}
+
+
+
+.ligne1 {
+    position: relative;
+    top: 65px;
+    width: 25%;
+    height: 20px;
+    background-color: #eb8130;
+    overflow: hidden;
+}
+
+.ligne2 {
+    position: relative;
+    top: 45px;
+    left: 75%;
+    width: 35%;
+    height: 20px;
+    background-color: #eb8130;
+    overflow: hidden;
+}
+
+.skill-ctn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    margin-top: 100px;
+    flex-direction: row;
+    /* border:2px solid #eb8130; */
+}
+
+/* 1ere Box */
+.HCJ {
+    border: 2px solid #EB8030;
+    width: 500px;
+    height: 200px;
+    margin: 6px;
+    background-color: rgba(192, 192, 192, 0.705);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.HTML img {
+    height: 150px;
+}
+.CSS img {
+    height: 150px;
+}
+.JS img {
+    height: 150px;
+}
+
+.P-HTML {
+    text-align: center;
+    font-size: 1.5em;
+   
+    color: white;
+}
+.P-CSS {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.P-JS {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* 2eme Box */
+.BPM {
+    border: 2px solid #EB8030;
+    width: 500px;
+    height: 200px;
+    margin: 6px;
+    background-color: rgba(192, 192, 192, 0.705);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.BOOTSTRAP img {
+    height: 150px;
+}
+.PHP img {
+    height: 150px;
+}
+.MYSQL img {
+    height: 150px;
+}
+
+.P-BOOTSTRAP {
+    text-align: center;
+    font-size: 1.5em;
+   
+    color: white;
+}
+.P-PHP {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.P-MYSQL {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+/* 3eme Box */
+.SCG {
+    border: 2px solid #EB8030;
+    width: 500px;
+    height: 200px;
+    margin: 6px;
+    background-color: rgba(192, 192, 192, 0.705);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.SHOPIFY img {
+    height: 150px;
+}
+.CANVA img {
+    height: 150px;
+}
+.GIT img {
+    height: 150px;
+}
+
+.P-SHOPIFY {
+    text-align: center;
+    font-size: 1.5em;
+   
+    color: white;
+}
+.P-CANVA {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.P-GIT {
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+
+
+@media screen and (max-width : 1030px){
+    .box2 {
+        height: 1000px;
+        background-image: url("./img/Copie\ de\ Présentation\ Simple\ et\ Basique\ Noir\ Élégant\ et\ Professionnel\ Dégradé\ \(Site\ Web\)\ \(1\).png");
+    }
+    .ligne1 {
+        display: none;
+    }
+    .ligne2 {
+        display: none;
+    }
+    #titre2 {
+        margin-top: 70px;
+    }
+
+    
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* page3 */
+
+.box3 {
+    width: 100%;
+    background-image: url("./img/FondBlanc.png");
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+.ligne3 {
+    position: relative;
+    top: 125px;
+    width: 25%;
+    height: 20px;
+    background-color: #eb8130;
+    overflow: hidden;
+}
+
+.ligne4 {
+    position: relative;
+    top: 105px;
+    left: 75%;
+    width: 35%;
+    height: 20px;
+    background-color: #eb8130;
+    overflow: hidden;
+}
+
+#titre-box3 {
+    font-size: 3.5em;
+    color: #1f232a;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.container
+{
+	padding: 100px 0 20px;
+}
+.slider-body
+{
+	position: relative;
+}
+.slider-img-body
+{
+	height: 290px;
+}
+.slider-item
+{
+	color: #fff;
+	opacity: 0.3;
+	transform: scale(0.8);
+	transition: opacity 0.4s, transform 0.4s;
+}
+.slider-img
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.slider-info
+{
+	padding: 10px 60px;
+	background-color: #1f232a;
+	text-align: center;
+}
+.owl-item.active.center .slider-item
+{
+	opacity: 1;
+	transform: scale(1);
+}
+.slider-date
+{
+	padding-top: 50px;
+	font-size: 14px;
+}
+.slider-title
+{
+	color: #EB8030;
+	padding-top: 25px;
+    font-size: 2.7em;
+}
+.slider-subtitle
+{
+	padding: 25px 0 45px;
+}
+.slider-description
+{
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+.slider-link-body
+{
+	padding: 20px 0 30px;
+}
+.slider-link
+{
+	position: relative;
+	text-decoration: none;
+	padding:10px 20px;
+	font-size: 20px;
+    text-align: center;
+	font-weight: bold;
+	color: #EB8030;
+	letter-spacing: 6px;
+	background-color: transparent;
+	transition: background-color 0.4s;
+	transition-delay: 0.5s;
+}
+.slider-link::before
+{
+	top:0;
+	content: "";
+	position: absolute;
+	left:0;
+	border: 2px solid #eb8130;
+	border-right: none;
+	height: 100%;
+}
+.slider-link::after
+{
+	top:0;
+	content: "";
+	position: absolute;
+	right:0;
+	border: 2px solid #eb8130;
+	border-left: none;
+	height: 100%;
+}
+.slider-link::before,
+.slider-link::after
+{
+	width: 10%;
+	transition: 0.5s;
+}
+.slider-link:hover
+{
+	background-color: rgb(255, 255, 255);
+    
+}
+.slider-link:hover::before,
+.slider-link:hover::after
+{
+	width: 51%;
+    
+}
+.slider-arrows
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.arrow
+{
+	position: absolute;
+	top:50%;
+	cursor: pointer;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #EB8030;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.4s ;
+}
+.arrow-left
+{
+	left: 40px;
+}
+.arrow-right
+{
+	right: 40px;
+}
+/*arrow-left*/
+.arrow-left:before
+{
+	content: "";
+	position: absolute;
+	transform: translate(0px, -1.5px) rotateZ(40deg);
+	transform-origin: left;
+	width: 50%;
+	height: 5px;
+	display: block;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: background-color 0.4s;
+}
+
+.arrow-left:after
+{
+	content: "";
+	position: absolute;
+	transform: translate(0px, 1.5px) rotateZ(320deg);
+	transform-origin: left;
+	width: 50%;
+	height: 5px;
+	display: block;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: background-color 0.4s;
+}
+/*arrow-left*/
+
+/*arrow-right*/
+.arrow-right:before
+{
+	content: "";
+	position: absolute;
+	transform: translate(0px, 1.5px) rotateZ(40deg);
+	transform-origin: right;
+	width: 50%;
+	height: 5px;
+	display: block;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: background-color 0.4s;
+}
+
+.arrow-right:after
+{
+	content: "";
+	position: absolute;
+	transform: translate(0px, -1.5px) rotateZ(320deg);
+	transform-origin: right;
+	width: 50%;
+	height: 5px;
+	display: block;
+	border-radius: 10px;
+	background-color: #fff;
+	transition: background-color 0.4s;
+}
+/*arrow-right*/
+
+.arrow:hover
+{
+	background-color: #fff;
+}
+
+.arrow:hover:before
+{
+	background-color: #EB8030;
+}
+.arrow:hover:after
+{
+	background-color: #EB8030;
+}
+
+@media (min-width: 1650px)
+{
+	.slider-img-body
+	{
+		height: auto;
+	}
+}
+
+@media (max-width: 750px)
+{
+	.container
+	{
+		padding: 40px 20px;
+	}
+	.slider-img-body
+	{
+		height: auto;
+	}
+	.arrow-left
+	{
+		left: -10px;
+	}
+	.arrow-right
+	{
+		right: -10px;
+	}
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+/* 4eme page */
+
+@font-face {
+    font-family: "Brittany Signature";
+    src: url("./font/BrittanySignature.ttf") format("truetype");
+}
+
+.background {
+    width: 100%;
+    background-image: url("./img/Présentation\ Simple\ et\ Basique\ Noir\ Élégant\ et\ Professionnel\ Dégradé\ \(Site\ Web\)\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+#titre-box4 {
+        font-size: 3em;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 70px;
+        
+}
+
+.ctn-carte {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte {
+    width: 90%;
+    max-width: 440px;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    padding: 50px 30px;
+    border: 2px solid rgb(253, 253, 253);
+    background: #f89447d5;
+    box-shadow: 0 5px 40px rgb(253, 253, 253);
+}
+
+.carte img {
+    width: 250px;
+}
+
+
+.carte .reseau img {
+ width: 70px;
+ margin: 10px 5px; 
+ border-radius: 40%;
+ transition: background 0.5s;  
+}
+
+.carte .reseau img:hover {
+    background:rgba(255, 255, 255, 0.411); 
+    border-radius: 50%;
+
+   }
+
+.bouton {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 30px 10px;
+
+}
+
+footer {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h1 {
+    font-family: "Brittany Signature";
+    font-size: 30px;
+    color: #EC904A;
+}
